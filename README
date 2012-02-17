@@ -1,0 +1,36 @@
+Romero Mod
+"A more gritty, realistic zombie experience."
+
+1. What is it?
+
+Romero Mod is a total conversion mod for Left 4 Dead 2, inspired by George A. Romero's masterpiece zombie films.
+
+The mod has the following goals:
+	* Evoke a feeling of genuine dread
+	* Improve game world immersion
+	* Dramatically change the strategies required to win
+	* Create something fun!
+
+
+2. How to install / use
+
+It is recommended that you disable all other L4D2 add-ons when using the Romero Mod.  Conflicts will almost certainly occur when other mods are present!
+
+Place the romeromod.vpk in the following folder (your path may vary slightly, depending on install location):
+	C:\Program Files (x86)\Steam\steamapps\common\left 4 dead 2\left4dead2\addons
+
+Launch L4D2, and enjoy!
+
+
+3. Credits / Legal
+
+Romero Mod has no affiliation with George A. Romero, his estate, his production companies, or any of his films.  Romero Mod is a wholly original work, intended to be an homage of sorts to his creative vision.
+
+Special thanks goes to the "Weapon Realism" mod ( http://www.l4dmaps.com/details.php?file=13260 ) by TheHyena & DJK83 for serving as a starting point for the weapon attributes.
+
+Also, special thanks goes to the "hide hud(G.U.I/UI)" mod ( http://www.l4dmaps.com/details.php?file=14493 ) by zippa for serving as a starting point for the GUI tweaks.
+
+
+4. License
+
+Romero Mod is licensed under the MIT License ( http://www.opensource.org/licenses/mit-license.php ).  See the LICENSE file for more details.
