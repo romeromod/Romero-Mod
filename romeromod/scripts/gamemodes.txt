@@ -1,0 +1,584 @@
+"GameModes"
+{
+	"coop"
+	{
+		"base"		"coop"
+		"maxplayers"	"4"
+		
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+
+		"hasdifficulty"		"1"
+	}
+
+	"realism"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	// realism
+		"x360ctx"	"6"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+
+		"hasdifficulty"		"1"
+
+		// set base gamemode convars first, then the current gamemode
+		convar {
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+		}
+
+	}
+
+	"survival"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"x360ctx"	"3"
+		"x360matchrule"		"2"
+		"x360matchruleteam"	"3"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+	}
+
+	"versus"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	// versus
+		"x360ctx"	"1"
+		"x360matchrule"		"1"
+		"x360matchruleteam"	"3"
+		"x360presence"		"7"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+			
+			// these are 360 only convar changes, if you prefix with 360_, they'll
+			// get set on 360 and dedicated for 360
+			"360_z_mega_mob_size" 25
+			"360_z_mob_spawn_max_size" 18
+			"360_z_versus_wandering_density" 0.026
+		}
+	}
+
+	"scavenge"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"	// scavenge
+		"x360ctx"	"4"
+		"x360matchrule"		"4"
+		"x360matchruleteam"	"5"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		"hasroundlimit"		"1"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+
+			// these are 360 only convar changes, if you prefix with 360_, they'll
+			// get set on 360 and dedicated for 360
+			"360_z_mega_mob_size" 25
+			"360_z_mob_spawn_max_size" 18
+			"360_z_versus_wandering_density" 0.026
+		}
+	}
+
+	"mutation1"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"0"
+		"x360ctx"	"7"
+		"x360presence" 	"13"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			z_jockey_ride_damage 15
+			z_pounce_damage 10
+			tongue_choke_damage_amount 15
+			tongue_drag_damage_amount 15
+		}
+	}
+
+	"mutation2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"1"
+		"x360ctx"	"8"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation3"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"2"
+		"x360ctx"	"9"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			pain_pills_decay_rate 0.27
+		}
+	}
+
+	"mutation4"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"3"
+		"x360ctx"	"10"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation5"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"4"
+		"x360ctx"	"11"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+	"mutation7"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"6"
+		"x360ctx"	"13"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+	"mutation8"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"7"
+		"x360ctx"	"14"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_permawipe 1
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+		}
+	}
+
+	"mutation9"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"8"
+		"x360ctx"	"15"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation10"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"9"
+		"x360ctx"	"16"
+		"x360presence"	"5"
+		"x360presence:"
+		{
+			"state:game"	"10"
+		}
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation11"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"10"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"18"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	}
+
+	"mutation12"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"13"	// intentionally mis-numbered
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"20"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+
+	}
+
+	"mutation13"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"
+		"achievementindex"	"12"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"22"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	}
+
+	"mutation14"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"11"	// intentionally mis-numbered
+		"x360ctx"	"24"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_infinite_primary_ammo" 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+	"mutation15"
+	{
+		"base"		"survival"
+		"maxplayers"    "8"
+		"achievementindex"	"14"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"28"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	}
+
+	"mutation16"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"15"
+		"x360ctx"	"25"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+
+	"mutation17"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+
+	"mutation18"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"17"
+		"x360ctx"	"26"
+		"dlcmask"	"0x0000000000000002"
+
+		"playercontrolledzombies"	"1"
+
+		convar {
+			pain_pills_decay_rate 0.27
+		}
+	}
+
+	"mutation19"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"18"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"30"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			"z_spawn_safety_range" 600
+			"z_ghost_travel_distance" 2000
+			"z_tank_health" 2000
+			"z_frustration" 0
+		}		
+	}
+
+	"mutation20"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"19"
+		"x360ctx"	"31"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"romeromod"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"dlcmask"	"0x0000000000000002"
+		"sv_tags" romeromod
+
+		convar {
+			// Zombie Tweaks
+
+			z_health 100								// Zombies are harder to kill (prevents 1-shot body kills)
+			z_speed 70									// Zombies shamble
+			z_walk_speed 55								// Zombies shamble more slowly sometimes
+			z_common_limit 200							// It's called a 'horde' for a reason
+			z_background_limit 200						// Waiting in the background
+			z_max_blood_scale 10 						// Gory!
+			z_hear_gunfire_range 1000					// Loud noises attract far-off zombies
+			z_hit_from_behind_factor 2					// Zombies that get behind you are more dangerous
+
+			// Horde Attributes
+
+			z_mob_spawn_min_size 30						// You must have this many zombies to play
+			z_mob_spawn_max_size 55						// ...but no more than this.
+			z_mega_mob_size 70							// Psyche!  Many more than that (only sometimes).
+			z_spawn_mobs_behind_chance 40				// Mobs should have a near even distribution of front vs. back, to encourage swarmy feel
+			z_mob_spawn_min_interval_easy 120			// A walk in the (zombie infested) park
+			z_mob_spawn_max_interval_easy 240			// A walk in the (zombie infested) park
+			z_mob_spawn_min_interval_normal 50			// Mobs come quick, so move fast
+			z_mob_spawn_max_interval_normal 110			// Mobs come quick, so move fast
+			z_mob_spawn_min_interval_hard 50			// Same distribution, harder targets
+			z_mob_spawn_max_interval_hard 110			// Same distribution, harder targets
+			z_mob_spawn_min_interval_expert 40			// Oh, what's an extra 10 seconds off between friends?
+			z_mob_spawn_max_interval_expert 100			// That's right.  Your doom.  That's what.
+
+
+			// Survivor Tweaks
+
+			survivor_speed 140							// Slow movement somewhat to increase tension
+			survivor_damage_speed_factor 0.3f			// Slightly better able to escape from mobs
+			survivor_friendly_fire_factor_easy 0		// It's easy, ok?
+			survivor_friendly_fire_factor_normal 0.5	// Friendly Fire is fairly dangerous
+			survivor_friendly_fire_factor_hard 0.75		// Friendly Fire is dangerous
+			survivor_friendly_fire_factor_expert 1		// Friendly Fire is really dangerous
+			z_friendly_fire_forgiveness 0				// Every shot against your friends counts
+
+			// Weapon Tweaks
+
+			z_gib_limb_distance 1000					// Balance tweaks due to larger mobs (rifle headshots at longer range)
+			z_gun_range 50								// Less melee range
+			z_gun_swing_interval 1						// Slow down melee spamming
+			z_gun_kick 1								// More realistic firearm behavior
+			z_shotgun_bonus_damage_multiplier 2			// Reduce shotgun damage at close range for balance
+			z_shotgun_bonus_damage_range 200			// Increase range for bonus damage to improve realism
+			z_non_head_damage_factor_easy 1				// Easy-peasy
+			z_non_head_damage_factor_normal 0.25		// Count your ammo
+			z_non_head_damage_factor_hard 0.18			// Line up your shots *very* carefully
+			z_non_head_damage_factor_expert 0.1			// Better just to run; headshots only
+
+			// Finale Tweaks
+
+			z_mob_spawn_finale_size 30					// More mobs in total spawn during the finale
+
+			// Environment Tweaks
+
+			music_manager 0								// This is not "Zombies: the Musical" (though perhaps it should be!)
+			director_no_specials 1						// There's no such thing as a super-zombie
+			director_no_bosses 1						// There's especially no such thing as a super-super-zombie
+			director_ready_duration 30					// Start moving already
+
+			// Item Distribution Tweaks
+
+			director_scavenge_item_override 1			// Lets us set the following variables
+			director_pain_pill_density 2				// Good healing is hard to find
+			director_pipe_bomb_density 2				// Who would leave these lying around?
+			director_molotov_density 2					// Don't these go bad quickly?
+			director_gas_can_density 1					// A horde of flaming zombies is a special occasion
+			director_oxygen_tank_density 3				// Fewer oxy tanks
+			director_propane_tank_density 3				// Fewer propane tanks
+			director_vomitjar_density 0					// TODO: Better way to remove completely?
+//			director_melee_weapon_density 2				// There should be plenty opportunity to find *something* to swing around
+			director_super_weapon_density 1				// super weapons are rare
+			director_pistol_density 1					// Spare pistols are moderately rare
+			director_ammo_density 3						// Ammo should be moderately rare
+			director_upgradepack_density 1				// Special ammo should be rare
+			sv_infected_ceda_vomitjar_probability 0		// no bile jars
+			director_defibrillator_density 1			// Defibs are rare in real life
+
+			// New for L4D2
+			adrenaline_duration 7						// Adrenelin isn't going to last you forever
+			adrenaline_run_speed 180					// Sure, you move faster, but not insanely so
+			incendiary_ammo_burn_time 1					// These can't be expected to set the world on fire
+			pain_pills_health_value 15					// Pills aren't magic, they just dull the pain a bit
+			pain_pills_decay_rate 0.05					// Slower pill decay rate (they also don't wear off immediately)
+			terror_ammo_multiplier 1					// No extra ammo just because things are rough
+			ammo_grenadelauncher_max 2					// Ok, you can have a *little* fun with these
+			ammo_m60_max 15								// Boxes come with 100, but let's assume some's been used (gets multiplied)
+			grenadelauncher_ff_scale 1					// Don't play catch with grenade launchers
+			grenadelauncher_ff_scale_self 1				// You blow up just the same as anyone else
+			survivor_burn_factor_easy 0.1				// We'll let you off easy here
+			survivor_burn_factor_normal 0.33			// Fire damage is manageable
+			survivor_burn_factor_hard 0.66				// This really hurts!
+			survivor_burn_factor_expert 1				// BURN!  BURN!
+			survivor_revive_health 20					// If you got incap'd, just getting pulled up won't help that much
+			first_aid_kit_max_heal 66					// First aid is to stem bleeding, not magic
+			pipe_bomb_timer_duration 4					// Shorter than you might expect, even for something as hacked together as this
+			z_wandering_density 0.015					// Despite the much lower-than-default value, this is actually more wanderers
+			car_alarm_duration 20						// Whose car alarm turns off that quickly?
+			z_door_pound_damage 5						// At least they're less effective at breaking down doors
+
+			// Changes we need to verify, because they may not be working (but that we want)
+			z_infected_burn_strength 0.1				// More flame-resistant zombies
+			survivor_shove_teammates 1					// Of course you can push your friends!
+			gascan_throw_force 6						// You're not so strong that you can huck a 25-pound gascan 40'
+			chainsaw_damage 60							// Softened up a bit so you actually have to hold into the undead more than a split second TODO: Test this at very low values to see if it's working
+			
+			
+			// Changes we don't want, but must make
+			director_melee_weapon_density 0				// Have to disable melee weapons until I can get 1-hit kill turned off
+			sv_infected_riot_control_tonfa_probability 0	// no tonfas as part of that!
+//			first_aid_kit_use_duration 10				// A bit slower to use than all that.  Bots freak out with this set.
+//			melee_collateral_shove_count 16				// Getting swarmed once shouldn't kill you, but does with this set to 8.
+			
+			// deprecated from L4D1
+//			survivor_walk_speed 65						// A leisurely stroll
+//			z_gib_limb_distance_buckshot 700			// Balance tweaks due to larger mobs (shotgun headshots at longer range)
+//			director_finale_mob_max_interval 20			// The finale spawns hordes more frequently
+
+			
+			// Temp, for fun
+//			adrenaline_run_speed 900
+//			cl_ragdoll_gravity 30
+//			director_melee_weapon_density 20				// There should be plenty opportunity to find *something* to swing around
+//			sv_infected_riot_control_tonfa_probability 100	// FLAMING TONFA!
+			
+			// Changelog
+
+			// v2.0a - Pre-testing as VPK mutation
+			// v1.0 - Initial release
+			// v0.9 - Another adjustment for kick.  No-incap fix made permanent.
+			// v0.8 - Slight adjustment for kick, trying potential fix for no-incap
+			// v0.7 - Easy mode made easier
+			// v0.6 - Slightly less kick on guns, based on advice of ex-military
+			// v0.5 - More spawn interval tweaks, separated zombie from horde sections
+			// v0.4 - Less propane tanks, tweaks to spawn intervals, up mob_spawn_finale_size,
+			//        decrease max time between mobs in finale, increase minimum mob size
+			// v0.3 - Increase minimum mob size a lot, minor decrease to super-mob size,
+			//        minor increase to gun kick, add "welcome screen"
+			// v0.2 - Override item distribution, finale spawns more often, reduce gun kick,
+			//        minor fixes/tweaks
+			// v0.1 - Initial testing
+		}
+	}
+
+
+}
+
