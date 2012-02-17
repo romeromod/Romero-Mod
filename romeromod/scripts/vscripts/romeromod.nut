@@ -4,7 +4,7 @@ Msg( "                                                  \n" );
 Msg( "                                                  \n" );
 Msg( "**************************************************\n" );
 Msg( "                                                  \n" );
-Msg( "           Welcome to Romero Mod v2.1             \n" );
+Msg( "           Welcome to Romero Mod v0.1             \n" );
 Msg( "    A more gritty, realistic zombie experience    \n" );
 Msg( "                                                  \n" );
 Msg( "**************************************************\n" );

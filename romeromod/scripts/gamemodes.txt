@@ -167,24 +167,6 @@
 			bullet_ff_through_walls 1
 			sb_unstick 0
 			mounted_gun_rate_of_fire 10 
-			
-			// Changelog
-
-			// v2.1 - Remove hud, adjust weapons, make more of a "total conversion" style mod, better server startup
-			// v2.0a - Pre-testing as VPK mutation
-			// v1.0 - Initial release
-			// v0.9 - Another adjustment for kick.  No-incap fix made permanent.
-			// v0.8 - Slight adjustment for kick, trying potential fix for no-incap
-			// v0.7 - Easy mode made easier
-			// v0.6 - Slightly less kick on guns, based on advice of ex-military
-			// v0.5 - More spawn interval tweaks, separated zombie from horde sections
-			// v0.4 - Less propane tanks, tweaks to spawn intervals, up mob_spawn_finale_size,
-			//        decrease max time between mobs in finale, increase minimum mob size
-			// v0.3 - Increase minimum mob size a lot, minor decrease to super-mob size,
-			//        minor increase to gun kick, add "welcome screen"
-			// v0.2 - Override item distribution, finale spawns more often, reduce gun kick,
-			//        minor fixes/tweaks
-			// v0.1 - Initial testing
 		}
 	}
 
