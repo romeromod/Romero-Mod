@@ -16,7 +16,7 @@ WeaponData
 
 	// Weapon characteristics:
 	"Penetration"				"1"
-	"Damage"					"15"
+	"Damage"					"120"
 	"Range"						"4096"
 	"RangeModifier"				"0.99"
 	"Bullets"					"1"

@@ -1,18 +1,18 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"2"
+	"VerticalPunch"			"5"
 	"SpreadPerShot"			"1.6"   
 	"MaxSpread"				"35"
 	"SpreadDecay"			"7"		
-	"MinDuckingSpread"		"0.5"	
-	"MinStandingSpread"		"1" 	
+	"MinDuckingSpread"		"0.85"	
+	"MinStandingSpread"		"1.2" 	
 	"MinInAirSpread"		"3"
 	"MaxMovementSpread"		"6"
 	"AddonAttachment"		"primary"
 	"Team" 					"Survivor"
 	
-	"Tier"					"0"		// valid entries are 0, 1, 2
+	"Tier"					"2"		// valid entries are 0, 1, 2
 	
 	"ResponseRulesName"		"M60"
 
@@ -54,16 +54,16 @@ WeaponData
 	
 	
 	// Weapon characteristics:
-	"PenetrationNumLayers"		"2"
-	"PenetrationPower"			"50"
+	"PenetrationNumLayers"		"3"
+	"PenetrationPower"			"40"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"50"
+	"Damage"			"103"
 	"Range"				"3000"
-	"RangeModifier"			"0.97"
+	"RangeModifier"			"0.95"
 	"GainRange"			"1500"	// range at which to use a gain curve to fall off to zero
 	"Bullets"			"1"
-	"CycleTime"			"0.11"
+	"CycleTime"			"0.109"
 
 	"TimeToIdle"			"1.5"
 	"IdleInterval"			"60"
@@ -76,19 +76,23 @@ WeaponData
 	"viewmodel"			"models/v_models/v_m60.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"150"
+	"clip_size"			"200"
 	
-	"primary_ammo"			"AMMO_TYPE_M60"
+	"primary_ammo"			"AMMO_TYPE_SNIPERRIFLE"
 	"secondary_ammo"		"None"
 
 	"weight"			"25"

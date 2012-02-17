@@ -59,12 +59,12 @@ WeaponData
 	"PenetrationPower"			"50"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"33"
+	"Damage"			"50"
 	"Range"				"3000"
 	"RangeModifier"			"0.97"
 	"GainRange"			"1500"	// range at which to use a gain curve to fall off to zero
 	"Bullets"			"1"
-	"CycleTime"			"0.0825"
+	"CycleTime"			"0.0769"
 
 	"TimeToIdle"			"2"
 	"IdleInterval"			"20"
@@ -77,17 +77,21 @@ WeaponData
 	"viewmodel"			"models/v_models/v_rif_sg552.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"50"
+	"clip_size"			"30"
 	
 	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
 	"secondary_ammo"		"None"

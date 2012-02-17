@@ -1,12 +1,12 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"2.0"
-	"SpreadPerShot"			"1"
-	"MaxSpread"				"30"
-	"SpreadDecay"			"5"
-	"MinDuckingSpread"		"0.5"
-	"MinStandingSpread"		"1.5"
+	"VerticalPunch"			"5"
+	"SpreadPerShot"			"6"
+	"MaxSpread"				"40"
+	"SpreadDecay"			"7.5"
+	"MinDuckingSpread"		"0.85"
+	"MinStandingSpread"		"0.85"
 	"MinInAirSpread"		"3.0"
 	"MaxMovementSpread"		"3.0"
 	"DeployDuration"		"0.5"
@@ -19,7 +19,7 @@ WeaponData
 	
 	"Tier"					"0"		// valid entries are 0, 1, 2
 	
-	"ResponseRulesName"		"SecondPistol"
+	"ResponseRulesName"		"Rifle"
 
 	// particle muzzle flash effect to play when fired	
 	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_pistol_FP"
@@ -43,7 +43,7 @@ WeaponData
 	// End Terror-specific Data ----------------
 
 	"MaxPlayerSpeed"		"250"
-	"WeaponType"			"pistol"
+	"WeaponType"			"rifle"
 	"WeaponPrice"			"500"
 	"WeaponArmorRatio"		"1.0"
 	"CrosshairMinDistance"		"8"
@@ -62,12 +62,12 @@ WeaponData
 	"PenetrationPower"			"30"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"32"
+	"Damage"			"75"
 	"Range"				"2500"
-	"RangeModifier"			"0.75"
+	"RangeModifier"			"0.70"
 	"Bullets"			"1"
 	//"CycleTime"			"0.15"
-	"CycleTime"			"0.175"
+	"CycleTime"			"0.14"
 	
 	// Weapon data is loaded by both the Game and Client DLLs.
 	"printname"			"Pistol"
@@ -82,19 +82,23 @@ WeaponData
 
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
 	"bucket"			"1"
 	"bucket_position"		"0"
 
-	"clip_size"			"17"
+	"clip_size"			"12"
 	
-	"primary_ammo"			"AMMO_TYPE_PISTOL"
+	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
 	"secondary_ammo"		"None"
 
 	"weight"			"5"

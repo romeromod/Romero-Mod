@@ -1,20 +1,20 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"1.0"
-	"SpreadPerShot"			"0.6"
-	"MaxSpread"				"25"
-	"SpreadDecay"			"4"
-	"MinDuckingSpread"		"0.05"
-	"MinStandingSpread"		"0.35"
-	"MinInAirSpread"		"1.25"
-	"MaxMovementSpread"		"4"
+	"VerticalPunch"			"2.8"
+	"SpreadPerShot"			"0.4"
+	"MaxSpread"				"30"
+	"SpreadDecay"			"5"
+	"MinDuckingSpread"		"0.4"
+	"MinStandingSpread"		"0.4"
+	"MinInAirSpread"		"1.5"
+	"MaxMovementSpread"		"3.5"
 	"AddonAttachment"		"primary"
 	"Team" 					"Survivor"
 	
 	"Tier"					"2"		// valid entries are 0, 1, 2
 	
-	"ResponseRulesName"		"Rifle_Desert"
+	"ResponseRulesName"		"Rifle"
 
 	// particle muzzle flash effect to play when fired
 	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_assaultrifle_FP"
@@ -26,10 +26,8 @@ WeaponData
 	// Used in the music system when this weapon fires
 	"MusicDynamicSpeed"		"0.35"
 	
-	"DisplayName"				"#L4D_Weapon_DesertRifle"
-	"DisplayNameAllCaps"		"#L4D_Weapon_DesertRifle_CAPS"
-	
-	"NewInL4D2"				"1"
+	"DisplayName"				"#L4D_Weapon_AssaultRifle"
+	"DisplayNameAllCaps"		"#L4D_Weapon_AssaultRifle_CAPS"
 
 	// 360 Terror Data
 	"MaxAutoAimDeflection1"			"10.0"
@@ -54,32 +52,36 @@ WeaponData
 	
 	
 	// Weapon characteristics:
-	"PenetrationNumLayers"		"2"
+	"PenetrationNumLayers"		"3"
 	"PenetrationPower"			"50"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"44"
+	"Damage"			"60"
 	"Range"				"3000"
 	"RangeModifier"			"0.97"
 	"GainRange"			"1500"	// range at which to use a gain curve to fall off to zero
 	"Bullets"			"1"
-	"CycleTime"			"0.07"
+	"CycleTime"			"0.075"
 
 	"TimeToIdle"			"1.5"
 	"IdleInterval"			"60"
 	
 	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"				"Assault Rifle"
+	"printname"			"Assault Rifle"
 
-	"playermodel"			"models/w_models/weapons/w_desert_rifle.mdl"
+	"playermodel"			"models/w_models/weapons/w_rifle_m16a2.mdl"
 	
-	"viewmodel"				"models/v_models/v_desert_rifle.mdl"
+	"viewmodel"			"models/v_models/v_rifle.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
@@ -88,7 +90,7 @@ WeaponData
 
 	"clip_size"			"30"
 	
-	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
+	"primary_ammo"			"AMMO_TYPE_SMG"
 	"secondary_ammo"		"None"
 
 	"weight"			"25"
@@ -99,8 +101,8 @@ WeaponData
 	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
 	SoundData
 	{
-		"single_shot"		"Rifle_Desert.Fire"
-		"shoot_incendiary"	"Rifle_Desert.FireIncendiary"
+		"single_shot"		"Rifle.Fire"
+		"shoot_incendiary"	"Rifle.FireIncendiary"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
@@ -108,11 +110,11 @@ WeaponData
 	{
 		"weapon"
 		{
-				"file"		"vgui/hud/iconsheet2"
-				"x"			"224"
-				"y"			"128"
-				"width"		"160"
-				"height"	"64"
+				"file"		"vgui/hud/iconsheet"
+				"x"			"128"
+				"y"			"384"
+				"width"		"192"
+				"height"	"64"	
 		}
 		"ammo"
 		{

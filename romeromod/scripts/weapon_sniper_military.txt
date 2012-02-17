@@ -1,12 +1,12 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"1.5"
-	"SpreadPerShot"			"1"
+	"VerticalPunch"			"5.0"
+	"SpreadPerShot"			"3.5"
 	"MaxSpread"			"15"
 	"SpreadDecay"			"8"
-	"MinDuckingSpread"		"0.05"
-	"MinStandingSpread"		"0.5"
+	"MinDuckingSpread"		"1.0"
+	"MinStandingSpread"		"1.1"
 	"MinInAirSpread"		"1.5"
 	"MaxMovementSpread"		"5"
 	"AddonAttachment"		"primary"
@@ -56,16 +56,15 @@ WeaponData
 	"Rumble"			"2"
 	
 	// Weapon characteristics:
-	"PenetrationNumLayers"		"2"
-	"PenetrationPower"			"50"
+	"PenetrationNumLayers"		"3"
+	"PenetrationPower"			"40"
 	"PenetrationMaxDistance"	"0"	// none
-	"CharacterPenetrationMaxDistance" "8192" // Shooting through infected is doesn't count against penetration count out to this range
 
-	"Damage"			"90"
+	"Damage"			"103"
 	"Range"				"8192"
-	"RangeModifier"			"1.0"
+	"RangeModifier"			"0.95"
 	"Bullets"			"1"
-	"CycleTime"			"0.25"
+	"CycleTime"			"0.15"
 	"AccuracyDivisor"		"-1"
 	"AccuracyOffset"		"0"
 	"MaxInaccuracy"			"0"
@@ -79,23 +78,23 @@ WeaponData
 	"viewmodel"			"models/v_models/v_sniper_military.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
-		"Manager"     "models/weapons/arms/v_arms_louis.mdl"
-		"Biker"       "models/weapons/arms/v_arms_francis.mdl"
-	  	"TeenGirl"    "models/weapons/arms/v_arms_zoey.mdl"
-	  	"NamVet"      "models/weapons/arms/v_arms_bill.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"30"
+	"clip_size"			"20"
 	
-	"primary_ammo"			"AMMO_TYPE_SNIPERRIFLE"
+	"primary_ammo"			"AMMO_TYPE_SMG"
 	"secondary_ammo"		"None"
 
 	"weight"			"20"

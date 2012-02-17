@@ -7,13 +7,14 @@ WeaponData
 	"addon_offset"			"6 3 -2.2"
 
 	"MaxPlayerSpeed"		"250"
-	"WeaponType"			"chainsaw"
+	"WeaponType"			"pistol"
 	"WeaponArmorRatio"		"1.0"
 	"CrosshairMinDistance"		"8"
 	"CrosshairDeltaDistance" 	"3"
 	"Team" 					"Survivor"
 	"BuiltRightHanded" 		"1"
 	"PlayerAnimationExtension" 	"pistol"
+	"CanEquipWithShield" 		"1"
 	
 	"Tier"					"0"		// valid entries are 0, 1, 2
 	
@@ -21,7 +22,7 @@ WeaponData
 
 	"Rumble"			"1"
 	
-	"Damage"			"36"
+	"Damage"			"10"
 	"CycleTime"			"0.175"
 	
 	"ResponseRulesName"		"Chainsaw"
@@ -33,17 +34,21 @@ WeaponData
 	
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
 	"bucket"			"1"
 	"bucket_position"		"1"
 	
-	"clip_size"			"30"
+	"clip_size"			"25"
 
 	"primary_ammo"			"AMMO_TYPE_CHAINSAW"
 	"secondary_ammo"		"None"

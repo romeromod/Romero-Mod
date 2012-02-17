@@ -1,16 +1,16 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"12"
+	"VerticalPunch"			"4"
 	"SpreadPerShot"			"1"
 	"MaxSpread"			"5"
 	"SpreadDecay"			"5"
-	"MinDuckingSpread"		"0"
+	"MinDuckingSpread"		"0.8"
 	"MinStandingSpread"		"0.8"
 	"MinInAirSpread"		"2.5"  //increased accuracy
 	"MaxMovementSpread"		"1.5"  //increased accuracy
-	"PelletScatterPitch"		"3.0"  //increased accuracy
-	"PelletScatterYaw"		"5.0"
+	"PelletScatterPitch"		"1.5"  //increased accuracy
+	"PelletScatterYaw"		"1.5"
 	"ReloadDuration"		"0.473"
 	"AddonAttachment"		"primary"
 	"Team"					"Survivor"
@@ -60,12 +60,11 @@ WeaponData
 	"PenetrationNumLayers"		"2"
 	"PenetrationPower"			"30"
 	"PenetrationMaxDistance"	"500"
-	"CharacterPenetrationMaxDistance" "300" // Shooting through infected is doesn't count against penetration count out to this range
 
-	"Damage"			"34"	// 22
+	"Damage"			"40"	// 22
 	"Range"				"3000"
 	"RangeModifier"		"0.7"	// 0.96
-	"Bullets"			"8"
+	"Bullets"			"9"
 	"CycleTime"			"0.5"
 	
 	// Weapon data is loaded by both the Game and Client DLLs.
@@ -75,19 +74,23 @@ WeaponData
 	"viewmodel"			"models/v_models/v_shotgun_chrome.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"8"
+	"clip_size"			"7"
 	
-	"primary_ammo"			"AMMO_TYPE_SHOTGUN"
+	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
 	"secondary_ammo"		"None"
 
 	"weight"			"20"

@@ -1,7 +1,7 @@
 MeleeWeaponData
 {
 	// Time before you can swing the weapon again
-	"refire_delay"	"0.85"
+	"refire_delay"	"0.75"
 	
 	// Model to show in firstperson
 	"viewmodel"		"models/weapons/melee/v_frying_pan.mdl"
@@ -13,7 +13,7 @@ MeleeWeaponData
 	"anim_prefix"	"anim"
 	
 	// Damage per hit
-	"damage"		"15"
+	"damage"		"20"
 	
 	// Damage flag value
 	// right now you can enter the integer values, or logical OR them together
@@ -27,6 +27,8 @@ MeleeWeaponData
 	// RUMBLE_CROWBAR_SWING = 9
 	// RUMBLE_L4D_PLAYER_MELEE_HIT = 42
 	"rumble_effect"	"42"
+
+                "decapitates" "0"
 
 	// Third person animations
 	"activity_idle"					"ACT_IDLE_FRYINGPAN"

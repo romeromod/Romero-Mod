@@ -1,14 +1,14 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"0.9"
-	"SpreadPerShot"			"0.32"
+	"VerticalPunch"			"2.8"
+	"SpreadPerShot"			"0.25"
 	"MaxSpread"				"30"
 	"SpreadDecay"			"5"
-	"MinDuckingSpread"		"0.7"
-	"MinStandingSpread"		"1.0"
+	"MinDuckingSpread"		"0.9"
+	"MinStandingSpread"		"0.9"
 	"MinInAirSpread"		"1.7"
-	"MaxMovementSpread"		"3"
+	"MaxMovementSpread"		"2.5"
 	"AddonAttachment"		"primary"
 	"Team"					"Survivor"
 	
@@ -58,11 +58,11 @@ WeaponData
 	"PenetrationPower"			"30"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"14"
+	"Damage"			"50"
 	"Range"				"2500"
-	"RangeModifier"			"0.84"
+	"RangeModifier"			"0.80"
 	"Bullets"			"1"
-	"CycleTime"			"0.0625"
+	"CycleTime"			"0.10"
 
 	"TimeToIdle"			"2"
 	"IdleInterval"			"20"
@@ -74,19 +74,23 @@ WeaponData
 	"viewmodel"			"models/v_models/v_smg.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"30"
+	"clip_size"			"32"
 	
-	"primary_ammo"			"AMMO_TYPE_SMG"
+	"primary_ammo"			"AMMO_TYPE_TURRET"
 	"secondary_ammo"		"None"
 
 	"weight"			"25"

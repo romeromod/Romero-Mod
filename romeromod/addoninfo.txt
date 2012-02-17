@@ -3,8 +3,8 @@
 "AddonInfo"
 {
 	addonSteamAppID         550                                                     // 500 is the app ID for Left 4 Dead
-	addontitle              "Romero Mod 2.0a"                                             // Add-on title that shows up in Add-ons list. ~20 chars max
-	addonversion            1                                                     // Version number of add-on version of the form <major>.<minor>
+	addontitle              "Romero Mod 2.1"                                             // Add-on title that shows up in Add-ons list. ~20 chars max
+	addonversion            2.1                                                     // Version number of add-on version of the form <major>.<minor>
 	addontagline            "A more gritty, realistic zombie experience."	             // Add-on tagline or wrap-up- a short description. ~100 chars max
 	addonauthor             "xaroth8088"                                                 // Name/alias of the author
 	addonContent_Versus 0

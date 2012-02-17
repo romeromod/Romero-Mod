@@ -4,7 +4,7 @@ Msg( "                                                  \n" );
 Msg( "                                                  \n" );
 Msg( "**************************************************\n" );
 Msg( "                                                  \n" );
-Msg( "           Welcome to Romero Mod v2.0a            \n" );
+Msg( "           Welcome to Romero Mod v2.1             \n" );
 Msg( "    A more gritty, realistic zombie experience    \n" );
 Msg( "                                                  \n" );
 Msg( "**************************************************\n" );
@@ -45,9 +45,9 @@ DirectorOptions <-
 		weapon_pipe_bomb		= 	"weapon_molotov"
 		weapon_vomitjar			= 	"weapon_molotov"
 		weapon_defibrillator	=	"weapon_first_aid_kit"
-		weapon_pistol_magnum	=	"weapon_pistol"
-		weapon_hunting_rifle	=	"weapon_rifle_ak47"
-		weapon_sniper_awp		=	"weapon_shotgun_spas"
+//		weapon_pistol_magnum	=	"weapon_pistol"
+//		weapon_hunting_rifle	=	"weapon_rifle_ak47"
+//		weapon_sniper_awp		=	"weapon_shotgun_spas"
 		weapon_sniper_scout		=	"weapon_rifle_desert"
 	}
 
@@ -66,10 +66,10 @@ DirectorOptions <-
 		weapon_vomitjar = 0
 		weapon_adrenaline = 0
 		weapon_melee = 0
-		weapon_pistol_magnum = 0
-		weapon_hunting_rifle	=	0
-		weapon_sniper_awp		=	0
-		weapon_sniper_scout		=	0
+//		weapon_pistol_magnum = 0
+//		weapon_hunting_rifle	=	0
+//		weapon_sniper_awp		=	0
+//		weapon_sniper_scout		=	0
 	}
 
 	function AllowWeaponSpawn( classname )

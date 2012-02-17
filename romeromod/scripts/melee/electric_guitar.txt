@@ -1,7 +1,7 @@
 MeleeWeaponData
 {
 	// Time before you can swing the weapon again
-	"refire_delay"	"1.3"
+	"refire_delay"	"1.0"
 	
 	// Model to show in firstperson
 	"viewmodel"		"models/weapons/melee/v_electric_guitar.mdl"
@@ -13,7 +13,7 @@ MeleeWeaponData
 	"anim_prefix"	"anim"
 	
 	// Damage per hit
-	"damage"		"17"
+	"damage"		"30"
 	
 	// Damage flag value
 	// right now you can enter the integer values, or logical OR them together

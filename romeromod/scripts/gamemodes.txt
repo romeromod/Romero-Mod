@@ -18,412 +18,6 @@
 		"hasdifficulty"		"1"
 	}
 
-	"realism"
-	{
-		"base"		"realism"
-		"maxplayers"    "4"	// realism
-		"x360ctx"	"6"
-		"x360matchrule"		"0"
-		"x360presence"		"5"
-
-		"hasdifficulty"		"1"
-
-		// set base gamemode convars first, then the current gamemode
-		convar {
-			sv_disable_glow_survivors 1
-			sv_disable_glow_faritems 1
-			sv_rescue_disabled 1
-			z_non_head_damage_factor_multiplier 0.5
-			z_head_damage_causes_wounds 1
-			z_use_next_difficulty_damage_factor 1
-			z_witch_always_kills 1
-		}
-
-	}
-
-	"survival"
-	{
-		"base"		"survival"
-		"maxplayers"    "4"	// survival
-		"x360ctx"	"3"
-		"x360matchrule"		"2"
-		"x360matchruleteam"	"3"
-		"x360presence"		"9"
-
-		"singlechapter"		"1"
-	}
-
-	"versus"
-	{
-		"base"		"versus"
-		"maxplayers"    "8"	// versus
-		"x360ctx"	"1"
-		"x360matchrule"		"1"
-		"x360matchruleteam"	"3"
-		"x360presence"		"7"
-
-		"playercontrolledzombies"	"1"
-
-		convar
-		{
-			"z_scrimmage_creep_delay" 0
-			"z_scrimmage_creep_rate" 100
-			"z_spawn_safety_range" 200
-			"tongue_miss_delay" 3
-			"tongue_hit_delay" 15
-			"tongue_dropping_to_ground_time" 0.5
-			"tongue_los_forgiveness_time" 1.5
-			"tongue_no_progress_choke_early_delay" 1.0
-			"z_pounce_stumble_radius" 160
-			"z_pounce_damage_interrupt" 150
-			"z_hunter_limit" 2
-			"z_smoker_limit" 2
-			"z_max_stagger_duration" 0.9
-			"sv_alltalk" 0
-			"z_ghost_los_expected_progress" 2000
-			"tongue_choke_damage_amount" 5
-			"tongue_break_from_damage_amount" 300
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-			
-			// these are 360 only convar changes, if you prefix with 360_, they'll
-			// get set on 360 and dedicated for 360
-			"360_z_mega_mob_size" 25
-			"360_z_mob_spawn_max_size" 18
-			"360_z_versus_wandering_density" 0.026
-		}
-	}
-
-	"scavenge"
-	{
-		"base"		"scavenge"
-		"maxplayers"    "8"	// scavenge
-		"x360ctx"	"4"
-		"x360matchrule"		"4"
-		"x360matchruleteam"	"5"
-		"x360presence"		"9"
-
-		"singlechapter"		"1"
-		"hasroundlimit"		"1"
-
-		"playercontrolledzombies"	"1"
-
-		convar
-		{
-			"z_scrimmage_creep_delay" 0
-			"z_scrimmage_creep_rate" 100
-			"z_spawn_safety_range" 200
-			"tongue_miss_delay" 3
-			"tongue_hit_delay" 15
-			"tongue_dropping_to_ground_time" 0.5
-			"tongue_los_forgiveness_time" 1.5
-			"tongue_no_progress_choke_early_delay" 1.0
-			"z_pounce_stumble_radius" 160
-			"z_pounce_damage_interrupt" 150
-			"z_hunter_limit" 2
-			"z_smoker_limit" 2
-			"z_max_stagger_duration" 0.9
-			"sv_alltalk" 0
-			"z_ghost_los_expected_progress" 2000
-			"tongue_choke_damage_amount" 5
-			"tongue_break_from_damage_amount" 300
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-
-			// these are 360 only convar changes, if you prefix with 360_, they'll
-			// get set on 360 and dedicated for 360
-			"360_z_mega_mob_size" 25
-			"360_z_mob_spawn_max_size" 18
-			"360_z_versus_wandering_density" 0.026
-		}
-	}
-
-	"mutation1"
-	{
-		"base"		"coop"
-		"maxplayers"    "1"
-		"achievementindex"	"0"
-		"x360ctx"	"7"
-		"x360presence" 	"13"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			z_jockey_ride_damage 15
-			z_pounce_damage 10
-			tongue_choke_damage_amount 15
-			tongue_drag_damage_amount 15
-		}
-	}
-
-	"mutation2"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"1"
-		"x360ctx"	"8"
-		"dlcmask"	"0x0000000000000002"
-	}
-
-	"mutation3"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"2"
-		"x360ctx"	"9"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			pain_pills_decay_rate 0.27
-		}
-	}
-
-	"mutation4"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"3"
-		"x360ctx"	"10"
-		"dlcmask"	"0x0000000000000002"
-	}
-
-	"mutation5"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"4"
-		"x360ctx"	"11"
-		"dlcmask"	"0x0000000000000002"
-
-		convar
-		{ 
-			sb_melee_approach_victim 1
-			sv_infected_riot_control_tonfa_probability 0
-		}
-	}
-	"mutation7"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"6"
-		"x360ctx"	"13"
-		"dlcmask"	"0x0000000000000002"
-
-		convar
-		{ 
-			sb_melee_approach_victim 1
-			sv_infected_riot_control_tonfa_probability 0
-		}
-	}
-
-	"mutation8"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"7"
-		"x360ctx"	"14"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			sv_permawipe 1
-			sv_disable_glow_survivors 1
-			sv_disable_glow_faritems 1
-			sv_rescue_disabled 1
-			z_non_head_damage_factor_multiplier 0.5
-			z_head_damage_causes_wounds 1
-			z_use_next_difficulty_damage_factor 1
-			z_witch_always_kills 1
-		}
-	}
-
-	"mutation9"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"8"
-		"x360ctx"	"15"
-		"dlcmask"	"0x0000000000000002"
-	}
-
-	"mutation10"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"9"
-		"x360ctx"	"16"
-		"x360presence"	"5"
-		"x360presence:"
-		{
-			"state:game"	"10"
-		}
-		"dlcmask"	"0x0000000000000002"
-	}
-
-	"mutation11"
-	{
-		"base"		"versus"
-		"maxplayers"    "8"
-		"achievementindex"	"10"
-		"playercontrolledzombies"	"1"
-		"x360ctx"	"18"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-		}
-	}
-
-	"mutation12"
-	{
-		"base"		"versus"
-		"maxplayers"    "8"
-		"achievementindex"	"13"	// intentionally mis-numbered
-		"playercontrolledzombies"	"1"
-		"x360ctx"	"20"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			sv_disable_glow_survivors 1
-			sv_disable_glow_faritems 1
-			sv_rescue_disabled 1
-			z_non_head_damage_factor_multiplier 0.5
-			z_head_damage_causes_wounds 1
-			z_use_next_difficulty_damage_factor 1
-			z_witch_always_kills 1
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-		}
-
-	}
-
-	"mutation13"
-	{
-		"base"		"scavenge"
-		"maxplayers"    "8"
-		"achievementindex"	"12"
-		"playercontrolledzombies"	"1"
-		"x360ctx"	"22"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-		}
-	}
-
-	"mutation14"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"11"	// intentionally mis-numbered
-		"x360ctx"	"24"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			"sv_infinite_primary_ammo" 1
-			sv_infected_riot_control_tonfa_probability 0
-		}
-	}
-
-	"mutation15"
-	{
-		"base"		"survival"
-		"maxplayers"    "8"
-		"achievementindex"	"14"
-		"playercontrolledzombies"	"1"
-		"x360ctx"	"28"
-		"dlcmask"	"0x0000000000000002"
-
-		convar
-		{
-			"z_scrimmage_creep_delay" 0
-			"z_scrimmage_creep_rate" 100
-			"z_spawn_safety_range" 200
-			"tongue_miss_delay" 3
-			"tongue_hit_delay" 15
-			"tongue_dropping_to_ground_time" 0.5
-			"tongue_los_forgiveness_time" 1.5
-			"tongue_no_progress_choke_early_delay" 1.0
-			"z_pounce_stumble_radius" 160
-			"z_pounce_damage_interrupt" 150
-			"z_hunter_limit" 2
-			"z_smoker_limit" 2
-			"z_max_stagger_duration" 0.9
-			"sv_alltalk" 0
-			"z_ghost_los_expected_progress" 2000
-			"tongue_choke_damage_amount" 5
-			"tongue_break_from_damage_amount" 300
-			"director_special_initial_spawn_delay_min" 2
-			"director_special_initial_spawn_delay_max" 10
-		}
-	}
-
-	"mutation16"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"15"
-		"x360ctx"	"25"
-		"dlcmask"	"0x0000000000000002"
-	}
-
-
-	"mutation17"
-	{
-		"base"		"coop"
-		"maxplayers"    "1"
-		"achievementindex"	"16"
-		"x360ctx"	"17"
-		"dlcmask"	"0x0000000000000002"
-
-		convar {
-			sv_infected_riot_control_tonfa_probability 0
-		}
-	}
-
-
-	"mutation18"
-	{
-		"base"		"versus"
-		"maxplayers"    "8"
-		"achievementindex"	"17"
-		"x360ctx"	"26"
-		"dlcmask"	"0x0000000000000002"
-
-		"playercontrolledzombies"	"1"
-
-		convar {
-			pain_pills_decay_rate 0.27
-		}
-	}
-
-	"mutation19"
-	{
-		"base"		"versus"
-		"maxplayers"    "8"
-		"achievementindex"	"18"
-		"playercontrolledzombies"	"1"
-		"x360ctx"	"30"
-		"dlcmask"	"0x0000000000000002"
-		
-		convar
-		{
-			"z_spawn_safety_range" 600
-			"z_ghost_travel_distance" 2000
-			"z_tank_health" 2000
-			"z_frustration" 0
-		}		
-	}
-
-	"mutation20"
-	{
-		"base"		"coop"
-		"maxplayers"    "4"
-		"achievementindex"	"19"
-		"x360ctx"	"31"
-		"dlcmask"	"0x0000000000000002"
-	}
-
 	"romeromod"
 	{
 		"base"		"coop"
@@ -436,7 +30,7 @@
 		convar {
 			// Zombie Tweaks
 
-			z_health 100								// Zombies are harder to kill (prevents 1-shot body kills)
+			z_health 95								// Zombies are harder to kill (prevents 1-shot body kills)
 			z_speed 70									// Zombies shamble
 			z_walk_speed 55								// Zombies shamble more slowly sometimes
 			z_common_limit 200							// It's called a 'horde' for a reason
@@ -448,8 +42,8 @@
 			// Horde Attributes
 
 			z_mob_spawn_min_size 30						// You must have this many zombies to play
-			z_mob_spawn_max_size 55						// ...but no more than this.
-			z_mega_mob_size 70							// Psyche!  Many more than that (only sometimes).
+			z_mob_spawn_max_size 50						// ...but no more than this.
+			z_mega_mob_size 65							// Psyche!  Many more than that (only sometimes).
 			z_spawn_mobs_behind_chance 40				// Mobs should have a near even distribution of front vs. back, to encourage swarmy feel
 			z_mob_spawn_min_interval_easy 120			// A walk in the (zombie infested) park
 			z_mob_spawn_max_interval_easy 240			// A walk in the (zombie infested) park
@@ -477,12 +71,12 @@
 			z_gun_range 50								// Less melee range
 			z_gun_swing_interval 1						// Slow down melee spamming
 			z_gun_kick 1								// More realistic firearm behavior
-			z_shotgun_bonus_damage_multiplier 2			// Reduce shotgun damage at close range for balance
+			z_shotgun_bonus_damage_multiplier 2.5		// Reduce shotgun damage at close range for balance
 			z_shotgun_bonus_damage_range 200			// Increase range for bonus damage to improve realism
 			z_non_head_damage_factor_easy 1				// Easy-peasy
-			z_non_head_damage_factor_normal 0.25		// Count your ammo
-			z_non_head_damage_factor_hard 0.18			// Line up your shots *very* carefully
-			z_non_head_damage_factor_expert 0.1			// Better just to run; headshots only
+			z_non_head_damage_factor_normal 0.28		// Count your ammo
+			z_non_head_damage_factor_hard 0.20			// Line up your shots *very* carefully
+			z_non_head_damage_factor_expert 0.11			// Better just to run; headshots only
 
 			// Finale Tweaks
 
@@ -522,8 +116,8 @@
 			terror_ammo_multiplier 1					// No extra ammo just because things are rough
 			ammo_grenadelauncher_max 2					// Ok, you can have a *little* fun with these
 			ammo_m60_max 15								// Boxes come with 100, but let's assume some's been used (gets multiplied)
-			grenadelauncher_ff_scale 1					// Don't play catch with grenade launchers
-			grenadelauncher_ff_scale_self 1				// You blow up just the same as anyone else
+			// grenadelauncher_ff_scale 1					// Don't play catch with grenade launchers
+			// grenadelauncher_ff_scale_self 1				// You blow up just the same as anyone else
 			survivor_burn_factor_easy 0.1				// We'll let you off easy here
 			survivor_burn_factor_normal 0.33			// Fire damage is manageable
 			survivor_burn_factor_hard 0.66				// This really hurts!
@@ -548,20 +142,35 @@
 //			first_aid_kit_use_duration 10				// A bit slower to use than all that.  Bots freak out with this set.
 //			melee_collateral_shove_count 16				// Getting swarmed once shouldn't kill you, but does with this set to 8.
 			
-			// deprecated from L4D1
-//			survivor_walk_speed 65						// A leisurely stroll
-//			z_gib_limb_distance_buckshot 700			// Balance tweaks due to larger mobs (shotgun headshots at longer range)
-//			director_finale_mob_max_interval 20			// The finale spawns hordes more frequently
-
-			
-			// Temp, for fun
-//			adrenaline_run_speed 900
-//			cl_ragdoll_gravity 30
-//			director_melee_weapon_density 20				// There should be plenty opportunity to find *something* to swing around
-//			sv_infected_riot_control_tonfa_probability 100	// FLAMING TONFA!
+			// Courtesy of "Weapon Realism 1.6.1 mod"
+			ammo_smg_max 360
+			ammo_assaultrifle_max 90
+			ammo_turret_max 600
+			ammo_sniperrifle_max 0
+			z_non_head_damage_factor_multiplier 1.0
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			survivor_incapacitated_cycle_time 0.165
+			sb_allow_shoot_through_survivors 0
+			sb_max_team_melee_weapons 0
+			grenadelauncher_velocity 2400
+			grenadelauncher_ff_scale 100
+			grenadelauncher_ff_scale_self 100
+			grenadelauncher_force_kill 500
+			grenadelauncher_damage 1100
+			grenadelauncher_radius_kill 500
+			grenadelauncher_radius_stumble 700
+			upgrade_laser_sight_spread_factor 0.7
+			upgrade_explosive_bullet_force 10
+			upgrade_explosive_slug_force 10
+			cl_tracers 0
+			bullet_ff_through_walls 1
+			sb_unstick 0
+			mounted_gun_rate_of_fire 10 
 			
 			// Changelog
 
+			// v2.1 - Remove hud, adjust weapons, make more of a "total conversion" style mod, better server startup
 			// v2.0a - Pre-testing as VPK mutation
 			// v1.0 - Initial release
 			// v0.9 - Another adjustment for kick.  No-incap fix made permanent.

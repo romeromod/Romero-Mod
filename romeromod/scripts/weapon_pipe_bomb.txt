@@ -1,7 +1,7 @@
 WeaponData
 {
 	"MaxPlayerSpeed"		"250"
-	"WeaponType"			"grenade"
+	"WeaponType"			"pistol"
 	"WeaponPrice"			"300"
 	"WeaponArmorRatio"		"1"
 	"CrosshairMinDistance"		"8"
@@ -24,7 +24,7 @@ WeaponData
 
 	// Weapon characteristics:
 	"Penetration"			"1"
-	"Damage"			"10"
+	"Damage"			"200"
 	"Range"				"4096"
 	"RangeModifier"			"0.99"
 	"Bullets"			"1"
@@ -36,10 +36,14 @@ WeaponData
 	"viewmodel"			"models/v_models/v_pipebomb.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"

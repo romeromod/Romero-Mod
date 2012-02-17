@@ -10,4 +10,5 @@ melee_manifest
 	"file"		"scripts/melee/katana.txt"
 	"file"		"scripts/melee/electric_guitar.txt"
 	"file"		"scripts/melee/knife.txt"
+	"file"		"scripts/melee/golfclub.txt"
 }

@@ -1,12 +1,12 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"1"
-	"SpreadPerShot"			"0.4"
-	"MaxSpread"				"30"
-	"SpreadDecay"			"5"
-	"MinDuckingSpread"		"0.85"
-	"MinStandingSpread"		"1.2"
+	"VerticalPunch"			"1.9"
+	"SpreadPerShot"			"0.35"
+	"MaxSpread"				"35"
+	"SpreadDecay"			"4"
+	"MinDuckingSpread"		"1.0"
+	"MinStandingSpread"		"1.0"
 	"MinInAirSpread"		"1.7"
 	"MaxMovementSpread"		"3"
 	"AddonAttachment"		"primary"
@@ -51,7 +51,7 @@ WeaponData
 	"CrosshairDeltaDistance"	"2"
 	"BuiltRightHanded"		"1"
 	"PlayerAnimationExtension"	"mp5"
-	"MuzzleFlashScale"		"1.1"
+	"MuzzleFlashScale"		"0"
 
 	
 	"CanEquipWithShield"		"0"
@@ -62,12 +62,12 @@ WeaponData
 	"PenetrationPower"			"30"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"18"
+	"Damage"			"75"
 	"GainRange"			"900"
 	"Range"				"2200"
-	"RangeModifier"			"0.84"
+	"RangeModifier"			"0.65"
 	"Bullets"			"1"
-	"CycleTime"			"0.0625"
+	"CycleTime"			"0.0524"
 
 	"TimeToIdle"			"2"
 	"IdleInterval"			"20"
@@ -80,10 +80,14 @@ WeaponData
 	
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 
 	"anim_prefix"			"anim"
@@ -92,7 +96,7 @@ WeaponData
 
 	"clip_size"			"30"
 	
-	"primary_ammo"			"AMMO_TYPE_SMG"
+	"primary_ammo"			"AMMO_TYPE_TURRET"
 	"secondary_ammo"		"None"
 
 	"weight"			"25"

@@ -1,16 +1,16 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"9"
+	"VerticalPunch"			"5"
 	"SpreadPerShot"			"20" //reduced from 30
 	"MaxSpread"			"5"
 	"SpreadDecay"			"5"
-	"MinDuckingSpread"		"0"
+	"MinDuckingSpread"		"0.8"
 	"MinStandingSpread"		"0.8"
 	"MinInAirSpread"		"2.5"  //increased accuracy
 	"MaxMovementSpread"		"1.5"  //increased accuracy
-	"PelletScatterPitch"		"4.0"  //increased accuracy
-	"PelletScatterYaw"		"8.5"  //decreased accuracy
+	"PelletScatterPitch"		"0.8"  //increased accuracy
+	"PelletScatterYaw"		"0.8"  //decreased accuracy
 	"ReloadDuration"		"0.396"
 	"AddonAttachment"		"primary"
 	"team"					"survivor"
@@ -58,15 +58,14 @@ WeaponData
 	
 	// Weapon characteristics:
 	"PenetrationNumLayers"		"2"
-	"PenetrationPower"			"30"
+	"PenetrationPower"			"20"
 	"PenetrationMaxDistance"	"500"
-	"CharacterPenetrationMaxDistance" "300" // Shooting through infected is doesn't count against penetration count out to this range
 
-	"Damage"			"25"
+	"Damage"			"40"
 	"Range"				"3000"
 	"RangeModifier"			"0.7"
-	"Bullets"			"11"
-	"CycleTime"			"0.15"
+	"Bullets"			"9"
+	"CycleTime"			"0.05"
 	
 	// Weapon data is loaded by both the Game and Client DLLs.
 	"printname"			"Auto Shotgun"
@@ -75,19 +74,23 @@ WeaponData
 	"viewmodel"			"models/v_models/v_autoshotgun.mdl"
 	"CharacterViewmodelAddon"
 	{
-		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
-		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
-		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
-		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
 	}
 	
 	"anim_prefix"			"anim"
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"9"
+	"clip_size"			"7"  //increased from 9
 	
-	"primary_ammo"			"AMMO_TYPE_AUTOSHOTGUN"
+	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
 	"secondary_ammo"		"None"
 
 	"weight"			"20"
