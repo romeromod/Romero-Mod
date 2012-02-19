@@ -45,14 +45,14 @@
 			z_mob_spawn_max_size 50						// ...but no more than this.
 			z_mega_mob_size 65							// Psyche!  Many more than that (only sometimes).
 			z_spawn_mobs_behind_chance 40				// Mobs should have a near even distribution of front vs. back, to encourage swarmy feel
-			z_mob_spawn_min_interval_easy 120			// A walk in the (zombie infested) park
-			z_mob_spawn_max_interval_easy 240			// A walk in the (zombie infested) park
-			z_mob_spawn_min_interval_normal 50			// Mobs come quick, so move fast
-			z_mob_spawn_max_interval_normal 110			// Mobs come quick, so move fast
-			z_mob_spawn_min_interval_hard 50			// Same distribution, harder targets
-			z_mob_spawn_max_interval_hard 110			// Same distribution, harder targets
-			z_mob_spawn_min_interval_expert 40			// Oh, what's an extra 10 seconds off between friends?
-			z_mob_spawn_max_interval_expert 100			// That's right.  Your doom.  That's what.
+			z_mob_spawn_min_interval_easy 150			// A walk in the (zombie infested) park
+			z_mob_spawn_max_interval_easy 300			// A walk in the (zombie infested) park
+			z_mob_spawn_min_interval_normal 75			// Mobs come quick, so move fast
+			z_mob_spawn_max_interval_normal 150			// Mobs come quick, so move fast
+			z_mob_spawn_min_interval_hard 75			// Same distribution, harder targets
+			z_mob_spawn_max_interval_hard 150			// Same distribution, harder targets
+			z_mob_spawn_min_interval_expert 65			// Oh, what's an extra 10 seconds off between friends?
+			z_mob_spawn_max_interval_expert 140			// That's right.  Your doom.  That's what.
 
 
 			// Survivor Tweaks
