@@ -30,7 +30,7 @@
 		convar {
 			// Zombie Tweaks
 
-			z_health 95								// Zombies are harder to kill (prevents 1-shot body kills)
+			z_health 80								// Zombies are harder to kill (prevents 1-shot body kills)
 			z_speed 70									// Zombies shamble
 			z_walk_speed 55								// Zombies shamble more slowly sometimes
 			z_common_limit 200							// It's called a 'horde' for a reason
