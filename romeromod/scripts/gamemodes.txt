@@ -43,7 +43,7 @@
 
 			z_mob_spawn_min_size 30						// You must have this many zombies to play
 			z_mob_spawn_max_size 45						// ...but no more than this.
-			z_mega_mob_size 60							// Psyche!  Many more than that (only sometimes).
+			z_mega_mob_size 50							// Psyche!  More than that (only sometimes).
 			z_spawn_mobs_behind_chance 40				// Mobs should have a near even distribution of front vs. back, to encourage swarmy feel
 			z_mob_spawn_min_interval_easy 150			// A walk in the (zombie infested) park
 			z_mob_spawn_max_interval_easy 300			// A walk in the (zombie infested) park
