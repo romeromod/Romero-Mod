@@ -31,10 +31,10 @@
 			// Zombie Tweaks
 
 			z_health 80								// Zombies are harder to kill (prevents 1-shot body kills)
-			z_speed 70									// Zombies shamble
-			z_walk_speed 55								// Zombies shamble more slowly sometimes
-			z_common_limit 200							// It's called a 'horde' for a reason
-			z_background_limit 200						// Waiting in the background
+			z_speed 65									// Zombies shamble
+			z_walk_speed 50								// Zombies shamble more slowly sometimes
+			z_common_limit 150							// It's called a 'horde' for a reason
+			z_background_limit 150						// Waiting in the background
 			z_max_blood_scale 10 						// Gory!
 			z_hear_gunfire_range 1000					// Loud noises attract far-off zombies
 			z_hit_from_behind_factor 2					// Zombies that get behind you are more dangerous
@@ -42,23 +42,23 @@
 			// Horde Attributes
 
 			z_mob_spawn_min_size 30						// You must have this many zombies to play
-			z_mob_spawn_max_size 45						// ...but no more than this.
-			z_mega_mob_size 50							// Psyche!  More than that (only sometimes).
+			z_mob_spawn_max_size 50						// ...but no more than this.
+			z_mega_mob_size 60							// Psyche!  More than that (only sometimes).
 			z_spawn_mobs_behind_chance 40				// Mobs should have a near even distribution of front vs. back, to encourage swarmy feel
 			z_mob_spawn_min_interval_easy 150			// A walk in the (zombie infested) park
 			z_mob_spawn_max_interval_easy 300			// A walk in the (zombie infested) park
-			z_mob_spawn_min_interval_normal 75			// Mobs come quick, so move fast
-			z_mob_spawn_max_interval_normal 150			// Mobs come quick, so move fast
-			z_mob_spawn_min_interval_hard 75			// Same distribution, harder targets
-			z_mob_spawn_max_interval_hard 150			// Same distribution, harder targets
-			z_mob_spawn_min_interval_expert 65			// Oh, what's an extra 10 seconds off between friends?
-			z_mob_spawn_max_interval_expert 140			// That's right.  Your doom.  That's what.
+			z_mob_spawn_min_interval_normal 70			// Mobs come quick, so move fast
+			z_mob_spawn_max_interval_normal 140			// Mobs come quick, so move fast
+			z_mob_spawn_min_interval_hard 70			// Same distribution, harder targets
+			z_mob_spawn_max_interval_hard 140			// Same distribution, harder targets
+			z_mob_spawn_min_interval_expert 60			// Oh, what's an extra 10 seconds off between friends?
+			z_mob_spawn_max_interval_expert 120			// That's right.  Your doom.  That's what.
 
 
 			// Survivor Tweaks
 
 			survivor_speed 140							// Slow movement somewhat to increase tension
-			survivor_damage_speed_factor 0.3f			// Slightly better able to escape from mobs
+			survivor_damage_speed_factor 0.35f			// Slightly better able to escape from mobs
 			survivor_friendly_fire_factor_easy 0		// It's easy, ok?
 			survivor_friendly_fire_factor_normal 0.5	// Friendly Fire is fairly dangerous
 			survivor_friendly_fire_factor_hard 0.75		// Friendly Fire is dangerous
@@ -74,9 +74,9 @@
 			z_shotgun_bonus_damage_multiplier 2.5		// Reduce shotgun damage at close range for balance
 			z_shotgun_bonus_damage_range 200			// Increase range for bonus damage to improve realism
 			z_non_head_damage_factor_easy 1				// Easy-peasy
-			z_non_head_damage_factor_normal 0.45		// Count your ammo
-			z_non_head_damage_factor_hard 0.30			// Line up your shots *very* carefully
-			z_non_head_damage_factor_expert 0.15		// Better just to run; headshots only
+			z_non_head_damage_factor_normal 0.50		// Count your ammo
+			z_non_head_damage_factor_hard 0.45			// Line up your shots *very* carefully
+			z_non_head_damage_factor_expert 0.30		// Better just to run; headshots only
 
 			// Finale Tweaks
 
@@ -132,8 +132,8 @@
 			// Changes we need to verify, because they may not be working (but that we want)
 			z_infected_burn_strength 0.1				// More flame-resistant zombies
 			survivor_shove_teammates 1					// Of course you can push your friends!
-			gascan_throw_force 6						// You're not so strong that you can huck a 25-pound gascan 40'
-			chainsaw_damage 60							// Softened up a bit so you actually have to hold into the undead more than a split second TODO: Test this at very low values to see if it's working
+			gascan_throw_force 1						// You're not so strong that you can huck a 25-pound gascan 40'
+			chainsaw_damage 1							// Softened up a bit so you actually have to hold into the undead more than a split second TODO: Test this at very low values to see if it's working
 			
 			
 			// Changes we don't want, but must make

@@ -32,7 +32,9 @@ DirectorOptions <-
 	cm_MaxSpecials = 0
 	cm_ProhibitBosses = 1
 	cm_WitchLimit = 0
-	cm_CommonLimit = 250
+	cm_CommonLimit = 150
+	cm_AllowSurvivorRescue = true
+	cm_BaseCommonAttackDamage = 1
 	
 	AlwaysAllowWanderers = 1
 	NumReservedWanderers = 10
@@ -42,7 +44,7 @@ DirectorOptions <-
 	weaponsToConvert =
 	{
 		weapon_melee			=	"weapon_molotov"
-		weapon_pipe_bomb		= 	"weapon_molotov"
+//		weapon_pipe_bomb		= 	"weapon_molotov"
 		weapon_vomitjar			= 	"weapon_molotov"
 		weapon_defibrillator	=	"weapon_first_aid_kit"
 //		weapon_pistol_magnum	=	"weapon_pistol"
