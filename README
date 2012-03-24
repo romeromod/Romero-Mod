@@ -17,7 +17,7 @@ The mod has the following goals:
 It is recommended that you disable all other L4D2 add-ons when using the Romero Mod.  Conflicts will almost certainly occur when other mods are present!
 
 Place the romeromod.vpk in the following folder (your path may vary slightly, depending on install location):
-	C:\Program Files (x86)\Steam\steamapps\common\left 4 dead 2\left4dead2\addons
+	"C:\Program Files (x86)\Steam\steamapps\common\left 4 dead 2\left4dead2\addons"
 
 Launch L4D2, and enjoy!
 
