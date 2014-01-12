@@ -4,7 +4,7 @@ Msg( "                                                  \n" );
 Msg( "                                                  \n" );
 Msg( "**************************************************\n" );
 Msg( "                                                  \n" );
-Msg( "           Welcome to Romero Mod v0.1             \n" );
+Msg( "           Welcome to Romero Mod v0.2             \n" );
 Msg( "    A more gritty, realistic zombie experience    \n" );
 Msg( "                                                  \n" );
 Msg( "**************************************************\n" );
@@ -20,6 +20,7 @@ DirectorOptions <-
 {
 	ActiveChallenge = 1
 
+	MaxSpecials = 0
 	HunterLimit = 0
 	SmokerLimit = 0
 	ChargerLimit = 0

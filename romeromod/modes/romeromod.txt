@@ -1,0 +1,153 @@
+"romeromod"
+{
+	"base"		"coop"
+	"maxplayers"    "4"
+	"hasdifficulty"	"1"
+	"singlechapter"	"1"
+	"DisplayTitle"	"Romero Mod"
+	"Description"	"A more gritty, realistic zombie experience."
+	"Image"	"vgui/menu_mode_mutation_romero"
+	"Author"	"xaroth8088"
+
+	convar {
+		// Zombie Tweaks
+
+		z_health 80								// Zombies are harder to kill (prevents 1-shot body kills)
+		z_speed 65									// Zombies shamble
+		z_walk_speed 50								// Zombies shamble more slowly sometimes
+		z_common_limit 150							// It's called a 'horde' for a reason
+		z_background_limit 150						// Waiting in the background
+		z_max_blood_scale 10 						// Gory!
+		z_hear_gunfire_range 1000					// Loud noises attract far-off zombies
+		z_hit_from_behind_factor 2					// Zombies that get behind you are more dangerous
+
+		// Horde Attributes
+
+		z_mob_spawn_min_size 30						// You must have this many zombies to play
+		z_mob_spawn_max_size 50						// ...but no more than this.
+		z_mega_mob_size 60							// Psyche!  More than that (only sometimes).
+		z_spawn_mobs_behind_chance 40				// Mobs should have a near even distribution of front vs. back, to encourage swarmy feel
+		z_mob_spawn_min_interval_easy 150			// A walk in the (zombie infested) park
+		z_mob_spawn_max_interval_easy 300			// A walk in the (zombie infested) park
+		z_mob_spawn_min_interval_normal 70			// Mobs come quick, so move fast
+		z_mob_spawn_max_interval_normal 140			// Mobs come quick, so move fast
+		z_mob_spawn_min_interval_hard 70			// Same distribution, harder targets
+		z_mob_spawn_max_interval_hard 140			// Same distribution, harder targets
+		z_mob_spawn_min_interval_expert 60			// Oh, what's an extra 10 seconds off between friends?
+		z_mob_spawn_max_interval_expert 120			// That's right.  Your doom.  That's what.
+
+
+		// Survivor Tweaks
+
+		survivor_speed 140							// Slow movement somewhat to increase tension
+		survivor_damage_speed_factor 0.35f			// Slightly better able to escape from mobs
+		survivor_friendly_fire_factor_easy 0		// It's easy, ok?
+		survivor_friendly_fire_factor_normal 0.5	// Friendly Fire is fairly dangerous
+		survivor_friendly_fire_factor_hard 0.75		// Friendly Fire is dangerous
+		survivor_friendly_fire_factor_expert 1		// Friendly Fire is really dangerous
+		z_friendly_fire_forgiveness 0				// Every shot against your friends counts
+
+		// Weapon Tweaks
+
+		z_gib_limb_distance 1000					// Balance tweaks due to larger mobs (rifle headshots at longer range)
+		z_gun_range 50								// Less melee range
+		z_gun_swing_interval 1						// Slow down melee spamming
+		z_gun_kick 1								// More realistic firearm behavior
+		z_shotgun_bonus_damage_multiplier 2.5		// Reduce shotgun damage at close range for balance
+		z_shotgun_bonus_damage_range 200			// Increase range for bonus damage to improve realism
+		z_non_head_damage_factor_easy 1				// Easy-peasy
+		z_non_head_damage_factor_normal 0.50		// Count your ammo
+		z_non_head_damage_factor_hard 0.45			// Line up your shots *very* carefully
+		z_non_head_damage_factor_expert 0.30		// Better just to run; headshots only
+
+		// Finale Tweaks
+
+		z_mob_spawn_finale_size 30					// More mobs in total spawn during the finale
+
+		// Environment Tweaks
+
+		music_manager 0								// This is not "Zombies: the Musical" (though perhaps it should be!)
+		director_no_specials 1						// There's no such thing as a super-zombie
+		director_no_bosses 1						// There's especially no such thing as a super-super-zombie
+		director_ready_duration 30					// Start moving already
+
+		// Item Distribution Tweaks
+
+		director_scavenge_item_override 1			// Lets us set the following variables
+		director_pain_pill_density 2				// Good healing is hard to find
+		director_pipe_bomb_density 2				// Who would leave these lying around?
+		director_molotov_density 2					// Don't these go bad quickly?
+		director_gas_can_density 1					// A horde of flaming zombies is a special occasion
+		director_oxygen_tank_density 3				// Fewer oxy tanks
+		director_propane_tank_density 3				// Fewer propane tanks
+		director_vomitjar_density 0					// TODO: Better way to remove completely?
+//			director_melee_weapon_density 2				// There should be plenty opportunity to find *something* to swing around
+		director_super_weapon_density 1				// super weapons are rare
+		director_pistol_density 1					// Spare pistols are moderately rare
+		director_ammo_density 3						// Ammo should be moderately rare
+		director_upgradepack_density 1				// Special ammo should be rare
+		sv_infected_ceda_vomitjar_probability 0		// no bile jars
+		director_defibrillator_density 1			// Defibs are rare in real life
+
+		// New for L4D2
+		adrenaline_duration 7						// Adrenelin isn't going to last you forever
+		adrenaline_run_speed 180					// Sure, you move faster, but not insanely so
+		incendiary_ammo_burn_time 1					// These can't be expected to set the world on fire
+		pain_pills_health_value 15					// Pills aren't magic, they just dull the pain a bit
+		pain_pills_decay_rate 0.05					// Slower pill decay rate (they also don't wear off immediately)
+		terror_ammo_multiplier 1					// No extra ammo just because things are rough
+		ammo_grenadelauncher_max 2					// Ok, you can have a *little* fun with these
+		ammo_m60_max 15								// Boxes come with 100, but let's assume some's been used (gets multiplied)
+		// grenadelauncher_ff_scale 1					// Don't play catch with grenade launchers
+		// grenadelauncher_ff_scale_self 1				// You blow up just the same as anyone else
+		survivor_burn_factor_easy 0.1				// We'll let you off easy here
+		survivor_burn_factor_normal 0.33			// Fire damage is manageable
+		survivor_burn_factor_hard 0.66				// This really hurts!
+		survivor_burn_factor_expert 1				// BURN!  BURN!
+		survivor_revive_health 20					// If you got incap'd, just getting pulled up won't help that much
+		first_aid_kit_max_heal 66					// First aid is to stem bleeding, not magic
+		pipe_bomb_timer_duration 4					// Shorter than you might expect, even for something as hacked together as this
+		z_wandering_density 0.015					// Despite the much lower-than-default value, this is actually more wanderers
+		car_alarm_duration 20						// Whose car alarm turns off that quickly?
+		z_door_pound_damage 5						// At least they're less effective at breaking down doors
+
+		// Changes we need to verify, because they may not be working (but that we want)
+		z_infected_burn_strength 0.1				// More flame-resistant zombies
+		survivor_shove_teammates 1					// Of course you can push your friends!
+		gascan_throw_force 1						// You're not so strong that you can huck a 25-pound gascan 40'
+		chainsaw_damage 1							// Softened up a bit so you actually have to hold into the undead more than a split second TODO: Test this at very low values to see if it's working
+		
+		
+		// Changes we don't want, but must make
+		director_melee_weapon_density 0				// Have to disable melee weapons until I can get 1-hit kill turned off
+		sv_infected_riot_control_tonfa_probability 0	// no tonfas as part of that!
+//			first_aid_kit_use_duration 10				// A bit slower to use than all that.  Bots freak out with this set.
+//			melee_collateral_shove_count 16				// Getting swarmed once shouldn't kill you, but does with this set to 8.
+		
+		// Courtesy of "Weapon Realism 1.6.1 mod"
+		ammo_smg_max 360
+		ammo_assaultrifle_max 90
+		ammo_turret_max 600
+		ammo_sniperrifle_max 0
+		z_non_head_damage_factor_multiplier 1.0
+		z_head_damage_causes_wounds 1
+		z_use_next_difficulty_damage_factor 1
+		survivor_incapacitated_cycle_time 0.165
+		sb_allow_shoot_through_survivors 0
+		sb_max_team_melee_weapons 0
+		grenadelauncher_velocity 2400
+		grenadelauncher_ff_scale 100
+		grenadelauncher_ff_scale_self 100
+		grenadelauncher_force_kill 500
+		grenadelauncher_damage 1100
+		grenadelauncher_radius_kill 500
+		grenadelauncher_radius_stumble 700
+		upgrade_laser_sight_spread_factor 0.7
+		upgrade_explosive_bullet_force 10
+		upgrade_explosive_slug_force 10
+		cl_tracers 0
+		bullet_ff_through_walls 1
+		sb_unstick 0
+		mounted_gun_rate_of_fire 10 
+	}
+}

@@ -3,15 +3,15 @@
 "AddonInfo"
 {
 	addonSteamAppID         550                                                     // 500 is the app ID for Left 4 Dead
-	addontitle              "Romero Mod 0.1"                                             // Add-on title that shows up in Add-ons list. ~20 chars max
-	addonversion            0.1                                                     // Version number of add-on version of the form <major>.<minor>
+	addontitle              "Romero Mod 0.2"                                             // Add-on title that shows up in Add-ons list. ~20 chars max
+	addonversion            0.2                                                     // Version number of add-on version of the form <major>.<minor>
 	addontagline            "A more gritty, realistic zombie experience."	             // Add-on tagline or wrap-up- a short description. ~100 chars max
 	addonauthor             "xaroth8088"                                                 // Name/alias of the author
 	addonContent_Versus 0
 //     addonSteamGroupName     ""       // (Optional) Steam group related to the add-on. We use this to construct a URL to the group page.
 	addonauthorSteamID      "xaroth8088"                                            // (Optional) Steam ID of author. We use this to construct a URL to the author's page.
 	addonContent_Campaign 0                                                    //This addon provides muliple connected maps with a finale
-	//     addonURL0               "http://forums.steampowered.com/forums/showthread.php?t=1529433"  //An html home page for the add-on that includes a download link.
+	addonURL0               "http://romeromod.github.io/Romero-Mod/"  //An html home page for the add-on that includes a download link.
 
 	// short description that appears in the Add-on list screen...
 	addonDescription        "A more gritty, realistic zombie experience."
