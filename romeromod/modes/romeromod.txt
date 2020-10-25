@@ -12,20 +12,15 @@
 	convar {
 		// Zombie Tweaks
 
-		z_health 80								// Zombies are harder to kill (prevents 1-shot body kills)
-		z_speed 65									// Zombies shamble
-		z_walk_speed 50								// Zombies shamble more slowly sometimes
-		z_common_limit 150							// It's called a 'horde' for a reason
-		z_background_limit 150						// Waiting in the background
+		z_health 80								    // Zombies are harder to kill (prevents 1-shot body kills)
+		z_speed 45									// Zombies shamble
+		z_walk_speed 30								// Zombies shamble more slowly sometimes
 		z_max_blood_scale 10 						// Gory!
 		z_hear_gunfire_range 1000					// Loud noises attract far-off zombies
 		z_hit_from_behind_factor 2					// Zombies that get behind you are more dangerous
 
 		// Horde Attributes
 
-		z_mob_spawn_min_size 30						// You must have this many zombies to play
-		z_mob_spawn_max_size 50						// ...but no more than this.
-		z_mega_mob_size 60							// Psyche!  More than that (only sometimes).
 		z_spawn_mobs_behind_chance 40				// Mobs should have a near even distribution of front vs. back, to encourage swarmy feel
 		z_mob_spawn_min_interval_easy 150			// A walk in the (zombie infested) park
 		z_mob_spawn_max_interval_easy 300			// A walk in the (zombie infested) park
@@ -67,8 +62,6 @@
 		// Environment Tweaks
 
 		music_manager 0								// This is not "Zombies: the Musical" (though perhaps it should be!)
-		director_no_specials 1						// There's no such thing as a super-zombie
-		director_no_bosses 1						// There's especially no such thing as a super-super-zombie
 		director_ready_duration 30					// Start moving already
 
 		// Item Distribution Tweaks
@@ -107,7 +100,6 @@
 		survivor_revive_health 20					// If you got incap'd, just getting pulled up won't help that much
 		first_aid_kit_max_heal 66					// First aid is to stem bleeding, not magic
 		pipe_bomb_timer_duration 4					// Shorter than you might expect, even for something as hacked together as this
-		z_wandering_density 0.015					// Despite the much lower-than-default value, this is actually more wanderers
 		car_alarm_duration 20						// Whose car alarm turns off that quickly?
 		z_door_pound_damage 5						// At least they're less effective at breaking down doors
 
@@ -116,14 +108,13 @@
 		survivor_shove_teammates 1					// Of course you can push your friends!
 		gascan_throw_force 1						// You're not so strong that you can huck a 25-pound gascan 40'
 		chainsaw_damage 1							// Softened up a bit so you actually have to hold into the undead more than a split second TODO: Test this at very low values to see if it's working
-		
-		
+
+
 		// Changes we don't want, but must make
-		director_melee_weapon_density 0				// Have to disable melee weapons until I can get 1-hit kill turned off
 		sv_infected_riot_control_tonfa_probability 0	// no tonfas as part of that!
 //			first_aid_kit_use_duration 10				// A bit slower to use than all that.  Bots freak out with this set.
 //			melee_collateral_shove_count 16				// Getting swarmed once shouldn't kill you, but does with this set to 8.
-		
+
 		// Courtesy of "Weapon Realism 1.6.1 mod"
 		ammo_smg_max 360
 		ammo_assaultrifle_max 90
@@ -148,6 +139,6 @@
 		cl_tracers 0
 		bullet_ff_through_walls 1
 		sb_unstick 0
-		mounted_gun_rate_of_fire 10 
+		mounted_gun_rate_of_fire 10
 	}
 }
